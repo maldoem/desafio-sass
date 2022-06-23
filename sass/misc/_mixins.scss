@@ -1,0 +1,13 @@
+@mixin grid($cols, $rows, $gap){
+    display: grid;
+    grid-template-columns:repeat($cols, ) ;
+    grid-template-rows:repeat($rows, ) ;
+    grid-gap: $gap;
+}
+
+
+@mixin location($col, $row){
+    display: grid;
+    grid-column: $col;
+    grid-row: $row;
+}

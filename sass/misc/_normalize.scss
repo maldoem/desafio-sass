@@ -1,0 +1,39 @@
+  /*normalize*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+html {
+    font-size: 62.5%;
+    color: white;
+}
+body { 
+    background-image: url("../img fondo de pagina/fonpanta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    flex-direction: column;
+    padding: 1%;
+}
+
+/*inicio redes*/
+.redes {
+    width: 100%;
+    height: 1.6%;  
+    word-wrap: break-word;
+    grid-column: 3/4;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    margin-top: 5rem;
+    .inter__social {
+        width: 45px;
+        height: 45px;
+        .redes__link{
+            border-radius: 50%;
+        }
+    }
+}
+

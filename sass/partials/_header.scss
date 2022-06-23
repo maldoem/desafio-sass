@@ -1,0 +1,44 @@
+/*inicio header*/
+header {
+    background-image:url("../img header/banner1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    align-items: center;
+    height: 14rem;
+    
+    .logo {
+        width: 20%;
+        height: 40%;
+    }
+
+    ul {
+        gap: 0.4rem;
+
+        .navbar-nav {
+            padding: 0;
+            --bs-nav-link-padding-x: 0;
+             --bs-nav-link-padding-y: 0;
+             }
+    }
+}
+@media screen and (max-width: 1023px){
+
+header{
+        min-width: 600px;
+        max-width: 1023px;
+        height: 10rem;
+        flex-direction: row;
+    }  
+}
+
+/*media 320/599*/ 
+@media screen and (max-width: 599px) {
+    header{
+            min-width: 320px;
+            max-width: 599px;
+            height:7rem;
+            padding: 8px;
+        }  
+}
