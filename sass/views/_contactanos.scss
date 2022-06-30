@@ -2,13 +2,40 @@
 .contacto {
     font-size: $title-secondary;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: $text-xsmall;
+    margin-top: $spacing-medium;
     color: white;
+    .info{
+        padding: $spacing-large;
+        align-self:center;
+        word-wrap: break-word;
+    }
+    .formulario{
+        background-color: black;
+        padding: $spacing-small;
+    }
 }
 @media screen and (max-width: 1023px) {
-    .formulario{
+    .contacto{
+        min-width: 600px;
+        max-width: 1023px;
+        flex-direction: column;
+        align-items: center;
+        .formulario{
             font-size: $text-medium;
+            display: flex;
+            justify-content: center;
+            
+            
         }
     }    
+}
+@media screen and (max-width: 599px){
+    .contacto{
+        min-width: 320px;
+        max-width: 599px;
+    }
+}

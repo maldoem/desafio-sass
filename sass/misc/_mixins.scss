@@ -1,13 +1,12 @@
-@mixin grid($cols, $rows, $gap){
+@mixin grid($cols ,$rows ,$just ,$gap){
     display: grid;
-    grid-template-columns:repeat($cols, ) ;
-    grid-template-rows:repeat($rows, ) ;
+    grid-template-columns:#{repeat($cols ,7.5%)} ;
+    grid-template-rows:repeat($rows ,10%);
+    justify-content: center;
     grid-gap: $gap;
 }
 
-
-@mixin location($col, $row){
-    display: grid;
-    grid-column: $col;
-    grid-row: $row;
+@mixin location($cStart, $cEnd, $rStart, $rEnd){
+    grid-column: #{$cStart}/#{$cEnd};
+    grid-row: #{$rStart}/#{$rEnd};
 }

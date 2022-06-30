@@ -4,31 +4,23 @@ header {
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    padding: 1%;
+    padding: $spacing-small;
     align-items: center;
-    height: 14rem;
-    
+    height: $spacing-large*5;
+    margin-top: $spacing-large;
     .logo {
         width: 20%;
         height: 40%;
     }
-
     ul {
         gap: 0.4rem;
-
-        .navbar-nav {
-            padding: 0;
-            --bs-nav-link-padding-x: 0;
-             --bs-nav-link-padding-y: 0;
-             }
     }
 }
 @media screen and (max-width: 1023px){
-
 header{
         min-width: 600px;
         max-width: 1023px;
-        height: 10rem;
+        height: $spacing-large*3;
         flex-direction: row;
     }  
 }
@@ -36,9 +28,9 @@ header{
 /*media 320/599*/ 
 @media screen and (max-width: 599px) {
     header{
-            min-width: 320px;
-            max-width: 599px;
-            height:7rem;
-            padding: 8px;
-        }  
+        min-width: 320px;
+        max-width: 599px;
+        height: $spacing-large+5;
+        padding: 8px;
+    }
 }

@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;  
     flex-direction: column;
+    row-gap: 2%;
     padding: 1%;
 }
 
@@ -22,18 +23,21 @@ body {
     width: 100%;
     height: 1.6%;  
     word-wrap: break-word;
-    grid-column: 3/4;
-    grid-row: 6;
     display: flex;
     justify-content: center;
     margin: 3%;
-    margin-top: 5rem;
+    margin-top: 10rem;
     .inter__social {
         width: 45px;
         height: 45px;
         .redes__link{
             border-radius: 50%;
+            }
         }
     }
-}
-
+@media (max-width: 1023px){
+    .redes{
+        margin-top: 15rem;
+        }
+    
+    }
