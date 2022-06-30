@@ -358,13 +358,17 @@ footer {
   justify-content: center;
   gap: 1rem;
   margin-top: 2%;
+  padding: 2%;
   color: white; }
   .contacto .info {
+    background-color: black;
+    opacity: 70%;
     padding: 3rem;
     align-self: center;
     word-wrap: break-word; }
   .contacto .formulario {
     background-color: black;
+    opacity: 70%;
     padding: 1%; }
 
 @media screen and (max-width: 1023px) {
@@ -381,12 +385,16 @@ footer {
 @media screen and (max-width: 599px) {
   .contacto {
     min-width: 320px;
-    max-width: 599px; } }
+    max-width: 599px; }
+    .contacto p {
+      font-size: 1.5rem; } }
 
-/*inicio carrito*/
-div.compras {
-  padding: 1%;
-  margin: 1%;
-  color: #ffffff; }
-  div.compras .title {
+/*inicio nosotros*/
+div.nosotros {
+  display: grid;
+  grid-template-columns: repeat(12, 7.5%);
+  grid-template-rows: repeat(10, 10%);
+  justify-content: center;
+  grid-gap: 2%; }
+  div.nosotros .title {
     padding: 1%; }

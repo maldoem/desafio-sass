@@ -1,0 +1,8 @@
+  /*inicio nosotros*/
+div.nosotros{
+    @include grid(12, 10, center, $spacing-medium);
+    .title{
+        padding: $spacing-small;
+    }
+    
+}

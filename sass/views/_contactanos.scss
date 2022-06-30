@@ -7,14 +7,18 @@
     justify-content: center;
     gap: $text-xsmall;
     margin-top: $spacing-medium;
+    padding: $spacing-medium;
     color: white;
     .info{
+        background-color: black;
+        opacity: 70%;
         padding: $spacing-large;
         align-self:center;
         word-wrap: break-word;
     }
     .formulario{
         background-color: black;
+        opacity: 70%;
         padding: $spacing-small;
     }
 }
@@ -29,7 +33,6 @@
             display: flex;
             justify-content: center;
             
-            
         }
     }    
 }
@@ -37,5 +40,8 @@
     .contacto{
         min-width: 320px;
         max-width: 599px;
+        p{
+            font-size: $text-medium;
+        }
     }
 }
