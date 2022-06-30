@@ -397,8 +397,8 @@ footer {
     padding: 2%; }
     .nosotros .oficina h2 {
       font-size: 3rem; }
-      .nosotros .oficina h2 article {
-        font-size: 1.7rem; }
+    .nosotros .oficina article {
+      font-size: 1.5rem; }
   .nosotros .ubicacion {
     grid-column: 7/11;
     grid-row: 2/6; }
@@ -409,15 +409,15 @@ footer {
     padding: 2%; }
     .nosotros .envios h2 {
       font-size: 3rem; }
-      .nosotros .envios h2 article {
-        font-size: 1.7rem; }
+    .nosotros .envios article {
+      font-size: 1.5rem; }
   .nosotros .mensajeria {
     grid-column: 7/11;
     grid-row: 6/10; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
   .nosotros {
-    max-width: 700px;
+    max-width: 980px;
     display: flex;
     flex-direction: column;
     padding: 2%; } }

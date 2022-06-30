@@ -9,9 +9,9 @@
       padding: $spacing-medium;
       h2{
         font-size: $text-large;
-        article{
-          font-size: $title-secondary;
-        }
+      }
+      article{
+        font-size: $text-medium;
       }
     }
     .ubicacion{
@@ -23,18 +23,19 @@
       padding: $spacing-medium; 
       h2{
         font-size: $text-large;
-        article{
-          font-size: $title-secondary;
-        }
       }
+      article{
+        font-size: $text-medium;
+      }
+      
     }
     .mensajeria{
       @include location(7 ,11 ,6 ,10);
     }
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 980px){
   .nosotros{
-    max-width: 700px;
+    max-width: 980px;
     display:flex;
     flex-direction: column;
     padding:$spacing-medium;
