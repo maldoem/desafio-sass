@@ -1,8 +1,42 @@
   /*inicio nosotros*/
-div.nosotros{
-    @include grid(12, 10, center, $spacing-medium);
-    .title{
-        padding: $spacing-small;
-    }
+.nosotros{
+    @include grid(12, 10, center, $spacing-medium+1);
+    color: $primary;
     
+    .oficina{
+      @include location(3 ,7 ,2 ,6);
+      background-color: #08429870;
+      padding: $spacing-medium;
+      h2{
+        font-size: $text-large;
+        article{
+          font-size: $title-secondary;
+        }
+      }
+    }
+    .ubicacion{
+      @include location(7 ,11 ,2 ,6);
+    }
+    .envios{
+      @include location(3 ,7 ,6 ,10);
+      background-color: #08429870;
+      padding: $spacing-medium; 
+      h2{
+        font-size: $text-large;
+        article{
+          font-size: $title-secondary;
+        }
+      }
+    }
+    .mensajeria{
+      @include location(7 ,11 ,6 ,10);
+    }
+}
+@media screen and (max-width: 700px){
+  .nosotros{
+    max-width: 700px;
+    display:flex;
+    flex-direction: column;
+    padding:$spacing-medium;
+  }
 }

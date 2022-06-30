@@ -1,14 +1,7 @@
 /*misc*/
 /*colors*/
 /*spacing*/
-/*3rem, 1, 1, 1*/
 /*fontsizes*/
-height-m {
-  width: 100%; }
-
-width-m {
-  width: 100%; }
-
 /*normalize*/
 * {
   margin: 0;
@@ -390,11 +383,41 @@ footer {
       font-size: 1.5rem; } }
 
 /*inicio nosotros*/
-div.nosotros {
+.nosotros {
   display: grid;
   grid-template-columns: repeat(12, 7.5%);
   grid-template-rows: repeat(10, 10%);
   justify-content: center;
-  grid-gap: 2%; }
-  div.nosotros .title {
-    padding: 1%; }
+  grid-gap: 3%;
+  color: #ffffff; }
+  .nosotros .oficina {
+    grid-column: 3/7;
+    grid-row: 2/6;
+    background-color: #08429870;
+    padding: 2%; }
+    .nosotros .oficina h2 {
+      font-size: 3rem; }
+      .nosotros .oficina h2 article {
+        font-size: 1.7rem; }
+  .nosotros .ubicacion {
+    grid-column: 7/11;
+    grid-row: 2/6; }
+  .nosotros .envios {
+    grid-column: 3/7;
+    grid-row: 6/10;
+    background-color: #08429870;
+    padding: 2%; }
+    .nosotros .envios h2 {
+      font-size: 3rem; }
+      .nosotros .envios h2 article {
+        font-size: 1.7rem; }
+  .nosotros .mensajeria {
+    grid-column: 7/11;
+    grid-row: 6/10; }
+
+@media screen and (max-width: 700px) {
+  .nosotros {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%; } }

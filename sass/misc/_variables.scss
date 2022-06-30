@@ -7,7 +7,6 @@ $spacing-small: 1%;
 $spacing-medium: 2%;
 $spacing-alternative: 1rem;
 $spacing-large: 3rem;
-/*3rem, 1, 1, 1*/
 
 /*fontsizes*/
 $title-principal: 2rem;
@@ -23,8 +22,3 @@ $size:(
     width-m:100%,
 );
 
-@each $key, $val in $size{
-    #{$key} {
-        width: #{$val};
-    }
-}
