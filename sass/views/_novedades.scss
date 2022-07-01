@@ -43,7 +43,7 @@
     .gallery_pic{
         transition: .2s;
         &:hover{
-            transform: scale(1.5);
+            transform: map-get($animated, transform);
         }
     }
 }

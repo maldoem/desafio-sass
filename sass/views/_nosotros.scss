@@ -1,7 +1,7 @@
   /*inicio nosotros*/
 .nosotros{
     @include grid(12, 10, center, $spacing-medium+1);
-    color: $primary;
+    color: $primary ;
     
     .oficina{
       @include location(3 ,7 ,2 ,6);

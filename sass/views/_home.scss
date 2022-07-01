@@ -8,11 +8,19 @@
         :hover{
             transform: skew(12deg, 12deg);
         } 
+        img{
+            opacity: map-get($animated, opacity);
+            transition: transform .8s;
+        }
     }
     .images:nth-of-type(2){
         @include location(8 , 12, 1, 5);
         :hover{
             transform: skew(-12deg, -12deg);
+        }
+        img{
+            opacity: map-get($animated, opacity);
+            transition: transform .8s;
         }
     }
     .intro:nth-of-type(3) {  
@@ -27,15 +35,19 @@
         :hover{
             transform: skew(-12deg, -12deg);
         }
+        img{
+            opacity: map-get($animated, opacity);
+            transition: transform .8s;
+        }
     }
     .images:nth-of-type(5){
         @include location(8 ,12 , 5, 9);
-        &:hover{
+        :hover{
             transform: skew(12deg, 12deg);
         }
         img{
-            opacity: 70%;
-            transition: transform .5s;
+            opacity: map-get($animated, opacity);
+            transition: transform .8s;
         }
     }
 }
