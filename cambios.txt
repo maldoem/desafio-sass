@@ -1,0 +1,6 @@
+buenas.
+_tengo aplicado el sass en todas las pages/views
+_cambie la page carrito por "nosotros" para poder ponerle contenido
+_esta incluido el mixin en todas las pages, utilizado mas q nada para el grid
+_el map-get para algunas animaciones
+_los media-queries estan aplicados cada cual en su respectivo pages, me resulto mas comodo tenerlo discriminado de esa manera
