@@ -58,26 +58,21 @@
         @include grid(12 ,11 , center, 3px);
         margin-bottom: $spacing-large+2;
         .images:nth-of-type(1){
-            grid-column: 2/7;
-            grid-row: 1/5;
+            @include location(2, 7, 1, 5);
         }
         .images:nth-of-type(2){
-            grid-column: 7/12;
-            grid-row: 1/5;
+            @include location(7, 12, 1, 5);
         }
         .intro:nth-of-type(3){
             font-size: $title-principal;
-            grid-column: 2/12;
-            grid-row: 5/7;
+            @include location(2, 12, 5, 7);
             justify-content: center;
         }
         .images:nth-of-type(4){
-            grid-column: 2/7;
-            grid-row: 7/12;
+            @include location(2, 7, 7, 12);
         }
         .images:nth-of-type(5){
-            grid-column: 7/12;
-            grid-row: 7/12;
+            @include location(7, 12, 7, 12);
         }
     }
 }
