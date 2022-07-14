@@ -2,7 +2,7 @@
 .nosotros{
     @include grid(12, 10, center, $spacing-medium+1);
     color: $primary ;
-    
+    margin-bottom: 20rem;    
     .oficina{
       @include location(3 ,7 ,2 ,6);
       background-color: #08429870;

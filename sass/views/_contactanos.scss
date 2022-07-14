@@ -17,9 +17,21 @@
         word-wrap: break-word;
     }
     .formulario{
+        display: flex;
+        flex-direction: column;
         background-color: black;
         opacity: 70%;
         padding: $spacing-small;
+        width: 26rem;
+        .planilla{       
+            button{
+                padding: 0.5rem;
+            }
+            textarea{
+                width: 23rem;
+                margin-top: $spacing-alternative;             
+            }
+        }
     }
 }
 @media screen and (max-width: 1023px) {

@@ -1,6 +1,9 @@
 footer{
     font-size: $text-small;
-    align-items: flex-end;
-    margin-top: 1px;
     color: white;
+    .final{
+        width: 27rem;
+        margin: auto;
+        
+    }
 }

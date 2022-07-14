@@ -4,6 +4,7 @@
     @include grid(11 ,9 , center, 0.4rem);
     padding: $spacing-medium;
     margin-top: $spacing-medium; 
+    margin-bottom: 15%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     justify-items: center;
     color: $primary;

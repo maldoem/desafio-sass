@@ -12,8 +12,8 @@ header {
         width: 20%;
         height: 40%;
     }
-    ul {
-        gap: 0.4rem;
+    .navbar-nav {
+        --bs-nav-link-padding-y: 0.3rem!important;
     }
 }
 @media screen and (max-width: 1023px){

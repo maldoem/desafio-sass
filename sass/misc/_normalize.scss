@@ -20,7 +20,7 @@ body {
 
 /*inicio redes*/
 .redes {
-    width: 100%;
+    
     height: 1.6%;  
     word-wrap: break-word;
     display: flex;
@@ -30,8 +30,10 @@ body {
     .inter__social {
         width: 45px;
         height: 45px;
-        .redes__link{
+        .iconify{
             border-radius: 50%;
+            width: 100%;
+            height: 100%;
             }
         }
     }
