@@ -110,7 +110,7 @@ footer {
   .home .intro:nth-of-type(3) {
     font-size: 2.5rem;
     word-wrap: break-word;
-    color: #ffffff;
+    color: yellow;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     grid-column: 6/8;
     grid-row: 2/5; }
@@ -234,9 +234,10 @@ footer {
     grid-column: 8/10;
     grid-row: 6/8; }
   .novedades .gallery_pic {
+    border: solid yellow;
     transition: .2s; }
     .novedades .gallery_pic:hover {
-      transform: scale(1.5); }
+      transform: scale(1.6); }
 
 @media screen and (max-width: 1023px) {
   .novedades {
@@ -298,65 +299,93 @@ footer {
 /*productos*/
 .products {
   font-size: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(11, 7.5%);
-  grid-template-rows: repeat(9, 10%);
-  justify-content: center;
-  grid-gap: 0.4rem;
+  color: #ffffff;
   padding: 2%;
   margin-top: 2%;
   margin-bottom: 15%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  justify-items: center;
-  color: #ffffff; }
+  display: flex;
+  flex-direction: column; }
   .products .product2 {
-    grid-column: 2/11;
-    grid-row: 1/4; }
-  .products .inventario1 {
-    grid-column: 2/4;
-    grid-row: 5/10; }
-  .products .inventario2 {
-    grid-column: 4/6;
-    grid-row: 5/10; }
-  .products .inventario3 {
-    grid-column: 6/8;
-    grid-row: 5/10; }
-  .products .inventario4 {
-    grid-column: 8/11;
-    grid-row: 5/10;
-    padding: 1%; }
-  .products .inventario__unidad {
+    padding: 2%; }
+  .products .cards {
     display: flex;
     flex-direction: column;
-    margin: 3px; }
+    padding: 0 2%; }
+    .products .cards h1 {
+      text-align: center;
+      color: yellow; }
+    .products .cards .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .products .cards .items .card {
+        background-color: black;
+        border: solid yellow;
+        margin: 2% 2%; }
+        .products .cards .items .card .card-img-top {
+          transition: .2s; }
+          .products .cards .items .card .card-img-top:hover {
+            position: relative;
+            z-index: 1;
+            transform: scale(2); }
 
-@media screen and (max-width: 599px) {
-  .products {
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(11, 7.5%);
-    grid-template-rows: repeat(12, 10%);
-    gap: 4px;
-    padding: 2%;
-    margin-top: 2%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: center;
+/*@include grid(11 ,9 , center, 0.4rem);
+    
+     
     justify-items: center;
-    color: #ffffff; }
-    .products .inventario1 {
-      grid-column: 2/6;
-      grid-row: 5/9; }
-    .products .inventario2 {
-      grid-column: 7/11;
-      grid-row: 5/9; }
-    .products .inventario3 {
-      grid-column: 2/6;
-      grid-row: 9/12; }
-    .products .inventario4 {
-      grid-column: 7/11;
-      grid-row: 9/12;
-      padding: 1%; } }
-
+    
+    .product2{
+        @include location(2 , 11, 1, 4);
+    }
+    .inventario1{
+        @include location(2 ,4 , 5, 10);
+    }            
+    .inventario2{
+        @include location(4 ,6 ,5, 10);
+    }
+    .inventario3{
+        @include location(6 ,8 , 5, 10);
+    }
+    .inventario4{
+        @include location(8 ,11 , 5, 10);
+        padding: $spacing-small;
+    }
+        .inventario__unidad{
+            display: flex;
+            flex-direction: column;
+            margin: 3px;
+        }
+}*/
+/*@media screen and (max-width: 599px){
+    .products {
+        font-size: $text-medium;
+        display: grid;
+        grid-template-columns: repeat(11 ,7.5%);
+        grid-template-rows: repeat(12 ,10%);
+        gap: 4px;
+        padding: $spacing-medium;
+        margin-top: $spacing-medium; 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        justify-content: center;
+        justify-items: center;
+        color: $primary;
+        .inventario1{
+            @include location(2 ,6 , 5, 9);
+        }    
+        .inventario2{
+            @include location(7 ,11 ,5, 9);
+        }
+        .inventario3{
+            @include location(2 ,6 , 9, 12);
+        }
+        .inventario4{
+            @include location(7 ,11 , 9, 12);
+            padding: $spacing-small;
+        }
+    }
+}*/
 /*inicio contactanos*/
 .contacto {
   font-size: 1.7rem;

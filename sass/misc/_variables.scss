@@ -1,6 +1,8 @@
 
 /*colors*/
 $primary: #ffffff;
+$secondary:yellow;
+$tertiary:black;
 
 /*spacing*/
 $spacing-small: 1%;
@@ -19,5 +21,6 @@ $text-alternative: 2.5rem;
 
 $animated:(
     opacity:70%,
-    transform:scale(1.5),
+    transform:scale(1.6),
+    transform2:scale(2),
 );

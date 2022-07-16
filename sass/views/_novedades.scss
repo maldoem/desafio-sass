@@ -42,6 +42,7 @@
         @include location(8, 10, 6, 8);
     }
     .gallery_pic{
+        border: solid yellow;
         transition: .2s;
         &:hover{
             transform: map-get($animated, transform);

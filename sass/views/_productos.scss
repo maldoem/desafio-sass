@@ -1,19 +1,56 @@
  /*productos*/
 .products {
     font-size: $text-medium;
-    @include grid(11 ,9 , center, 0.4rem);
+    color: $primary;
     padding: $spacing-medium;
     margin-top: $spacing-medium; 
     margin-bottom: 15%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    .product2{
+        padding: $spacing-medium;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        padding: 0 $spacing-medium;
+        h1{
+            text-align: center;
+            color: $secondary;
+        }
+        .items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .card{
+                background-color: $tertiary;
+                border: solid $secondary;
+                margin: $spacing-medium $spacing-medium;
+                .card-img-top{
+                    transition: .2s;                    
+                        &:hover{
+                            position:relative;
+                            z-index: 1;  
+                            transform: map-get($animated, transform2);
+                        }
+                }
+            }
+        }
+    }
+}
+    /*@include grid(11 ,9 , center, 0.4rem);
+    
+     
     justify-items: center;
-    color: $primary;
+    
     .product2{
         @include location(2 , 11, 1, 4);
     }
     .inventario1{
         @include location(2 ,4 , 5, 10);
-    }    
+    }            
     .inventario2{
         @include location(4 ,6 ,5, 10);
     }
@@ -29,8 +66,8 @@
             flex-direction: column;
             margin: 3px;
         }
-}
-@media screen and (max-width: 599px){
+}*/
+/*@media screen and (max-width: 599px){
     .products {
         font-size: $text-medium;
         display: grid;
@@ -57,6 +94,6 @@
             padding: $spacing-small;
         }
     }
-}
+}*/
 
 

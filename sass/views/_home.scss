@@ -27,7 +27,7 @@
     .intro:nth-of-type(3) {  
         font-size: $text-alternative;
         word-wrap: break-word;
-        color: $primary;
+        color: $secondary;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         @include location(6 , 8, 2, 5);
     }
