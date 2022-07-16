@@ -331,61 +331,6 @@ footer {
             z-index: 1;
             transform: scale(2); }
 
-/*@include grid(11 ,9 , center, 0.4rem);
-    
-     
-    justify-items: center;
-    
-    .product2{
-        @include location(2 , 11, 1, 4);
-    }
-    .inventario1{
-        @include location(2 ,4 , 5, 10);
-    }            
-    .inventario2{
-        @include location(4 ,6 ,5, 10);
-    }
-    .inventario3{
-        @include location(6 ,8 , 5, 10);
-    }
-    .inventario4{
-        @include location(8 ,11 , 5, 10);
-        padding: $spacing-small;
-    }
-        .inventario__unidad{
-            display: flex;
-            flex-direction: column;
-            margin: 3px;
-        }
-}*/
-/*@media screen and (max-width: 599px){
-    .products {
-        font-size: $text-medium;
-        display: grid;
-        grid-template-columns: repeat(11 ,7.5%);
-        grid-template-rows: repeat(12 ,10%);
-        gap: 4px;
-        padding: $spacing-medium;
-        margin-top: $spacing-medium; 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-        justify-content: center;
-        justify-items: center;
-        color: $primary;
-        .inventario1{
-            @include location(2 ,6 , 5, 9);
-        }    
-        .inventario2{
-            @include location(7 ,11 ,5, 9);
-        }
-        .inventario3{
-            @include location(2 ,6 , 9, 12);
-        }
-        .inventario4{
-            @include location(7 ,11 , 9, 12);
-            padding: $spacing-small;
-        }
-    }
-}*/
 /*inicio contactanos*/
 .contacto {
   font-size: 1.7rem;
